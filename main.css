@@ -134,5 +134,81 @@ Media Query
 *****************/
 /* Desktop */
 @media(min-width: 1440px) {
-  
+
+/*****************  
+Section
+*****************/
+.container {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*****************  
+Upper Container
+*****************/
+.upper-container {
+  width: 50%;
+  height: 485px;
+  background: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 485px;
+  background:hsl(276, 99%, 28%);
+  opacity: 0.5;
+}
+
+/*****************  
+Lower Container
+*****************/
+.lower-container {
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 50px;
+}
+
+/*****************  
+Header
+*****************/
+.header {
+  font-size: 2.5em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+/*****************  
+Details
+*****************/
+.details {
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  width: 350px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+/*****************  
+Stats
+*****************/
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin-left: 20px;
+}
+
 }
