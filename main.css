@@ -59,9 +59,20 @@ Section
 /*****************  
 Upper Container
 *****************/
-img {
-  width: 300px;
-  object-fit: cover;
+.upper-container {
+  width: 100%;
+  height: 200px;
+  background: url(images/image-header-mobile.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background:hsl(276, 99%, 28%);
+  opacity: 0.5;
 }
 
 /*****************  
