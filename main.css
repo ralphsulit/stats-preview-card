@@ -16,7 +16,7 @@ COLORS
 }
 
 .violet {
-  color: hsl(277, 64% 62%);
+  color: hsl(277, 64%, 61%);
 }
 
 .white {
@@ -36,29 +36,92 @@ body {
   font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
-  color: hsl(233, 47%, 7%);
+  color:hsl(0, 0%, 100%); 
+  background: hsl(233, 47%, 7%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+
+/*****************  
+Section
+*****************/
 .container {
   width: 300px;
-  height: 400px;
   text-align: center;
+  background:hsl(244, 38%, 16%);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.upper-container img {
+/*****************  
+Upper Container
+*****************/
+img {
   width: 300px;
+  object-fit: cover;
+}
+
+/*****************  
+Lower Container
+*****************/
+.lower-container {
+  padding: 20px 25px;
+}
+
+/*****************  
+Header
+*****************/
+.header {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  width: 220px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+/*****************  
+Details
+*****************/
+.details {
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83em;
+  font-weight: 400;
+  line-height: 22px;
+  width: 220px;
+  margin-left: 20px;
+}
+
+/*****************  
+Stats
+*****************/
+.item {
+  color:hsl(0, 0%, 100%); 
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 30px 0;
+}
+.item span {
+  color:hsla(0, 0%, 100%, 0.6);
+  display: block;
+  font-size: 0.48em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding-top: 5px;
 }
 
 
 
 /*****************  
-Details
+Media Query
 *****************/
-.item span {
-  display: block;
-  text-transform: uppercase;
+/* Desktop */
+@media(min-width: 1440px) {
+  
 }
